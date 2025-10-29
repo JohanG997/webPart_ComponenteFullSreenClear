@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pages-clear-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pagesClear/PagesClearApplicationCustomizer.js",
+          "manifest": "./src/extensions/pagesClear/PagesClearApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PagesClearApplicationCustomizerStrings": "lib/extensions/pagesClear/loc/{locale}.js"
+  }
+}

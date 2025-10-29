@@ -1,0 +1,19 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "20.11.1",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "pages-clear",
+    "libraryId": "5da43e50-2bc7-475c-b71e-5a6997de6a1b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "PagesClear",
+    "solutionShortDescription": "PagesClear description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

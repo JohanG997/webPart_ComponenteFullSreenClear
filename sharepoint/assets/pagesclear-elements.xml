@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Title="PagesClear"
+    Location="ClientSideExtension.ApplicationCustomizer"
+    ClientSideComponentId="c5a90bb5-a83c-4f99-bef7-fb698ec06052"
+    ClientSideComponentProperties='{
+      "enabled": true,
+      "bypassForAdmins": false,
+      "bypassOwnerGroup": true,
+      "bypassMemberGroup": false,
+      "bypassVisitorGroup": false
+    }'
+    Sequence="10000" />
+</Elements>
