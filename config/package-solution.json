@@ -3,7 +3,7 @@
   "solution": {
     "name": "pages-clear-client-side-solution",
     "id": "5da43e50-2bc7-475c-b71e-5a6997de6a1b",
-    "version": "2.0.1.0",
+    "version": "2.0.4.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": false,
     "isDomainIsolated": false,
@@ -12,7 +12,7 @@
         "title": "PagesClear Feature",
         "description": "Registra el Application Customizer en el sitio",
         "id": "701e93f5-21d2-4f0f-9dc3-083c5813517c",
-        "version": "2.0.1.0",
+        "version": "2.0.4.0",
         "assets": {
           "elementManifests": [ "pagesclear-elements.xml" ]
         }
