@@ -167,9 +167,18 @@ html.hide-chrome .Canvas {
       has(p, '/shared%20documents') || has(p, '/documents') || has(p, '/documentos');
 
     // Aplicar en páginas modernas y también en raíz (muy común que “Home” sea la raíz)
-    const isSitePage  = has(p, '/sitepages/');
-    const isHome      = ends(p, '/home.aspx') || ends(p, '/default.aspx');
-const isRoot = p.length > 0 && p.charAt(p.length - 1) === '/';
+const isSitePage = has(p, '/sitepages/');
+const isHome = ends(p, '/home.aspx') || ends(p, '/default.aspx');
+
+// Detecta correctamente la raíz del sitio aunque no termine en "/"
+// Ejemplo: /sites/grp_intra_ec o /sites/grp_intra_ec/
+const normalizePath = (value: string): string =>
+  (value || '/').toLowerCase().replace(/\/+$/, '') || '/';
+
+const currentPath = normalizePath(p);
+const webPath = normalizePath(new URL(this.context.pageContext.web.absoluteUrl).pathname);
+
+const isRoot = currentPath === webPath;
 
 
 
